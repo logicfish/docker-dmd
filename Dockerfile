@@ -32,6 +32,11 @@ RUN cd /tmp \
 RUN dub fetch reggae \
  && dub build reggae
 
+RUN cd /tmp \
+ && echo 'import reggae; alias app = executable!(ExeName("hello"), Sources!(["."]), Flags("-g -O0")); mixin build!app;' > reggaefile.d \
+ && dub run reggae -- -b binary \
+ && rm -r .reggae
+
 WORKDIR /src
 
 ENV GOSU_VERSION 1.9
