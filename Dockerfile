@@ -35,7 +35,7 @@ RUN dub fetch reggae \
 RUN cd /tmp \
  && echo 'import reggae; alias app = executable!(ExeName("hello"), Sources!(["."]), Flags("-g -O0")); mixin build!app;' > reggaefile.d \
  && dub run reggae -- -b binary \
- && rm -r .reggae
+ && rm -r .reggae build
 
 WORKDIR /src
 
