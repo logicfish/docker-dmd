@@ -37,6 +37,9 @@ RUN cd /tmp \
  && dub run reggae -- -b binary \
  && rm -r .reggae build
 
+RUN dub fetch --version=~master vayne \
+ && dub build vayne
+
 WORKDIR /src
 
 ENV GOSU_VERSION 1.9
