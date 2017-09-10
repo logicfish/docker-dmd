@@ -29,7 +29,8 @@ RUN cd /tmp \
  && dmd test.d \
  && ./test && rm test*
 
-RUN dub build reggae
+RUN dub fetch reggae \
+ && dub buile reggae
 
 WORKDIR /src
 
