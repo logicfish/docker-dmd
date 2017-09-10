@@ -30,7 +30,7 @@ RUN cd /tmp \
  && ./test && rm test*
 
 RUN dub fetch reggae \
- && dub buile reggae
+ && dub build reggae
 
 WORKDIR /src
 
