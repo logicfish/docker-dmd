@@ -29,6 +29,8 @@ RUN cd /tmp \
  && dmd test.d \
  && ./test && rm test*
 
+RUN dub build reggae
+
 WORKDIR /src
 
 ENV GOSU_VERSION 1.9
