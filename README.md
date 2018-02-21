@@ -1,6 +1,6 @@
-[![Docker pulls](https://img.shields.io/docker/pulls/dlanguage/dmd.svg)](https://hub.docker.com/r/dlanguage/dmd/)
-[![Docker Build](https://img.shields.io/docker/automated/dlanguage/dmd.svg)](https://hub.docker.com/r/dlanguage/dmd/)
-[![Latest Tag](https://img.shields.io/github/tag/lindt/docker-dmd.svg)](https://hub.docker.com/r/dlanguage/dmd/)
+[![Docker pulls](https://img.shields.io/docker/pulls/dlanguage/dmd.svg)](https://hub.docker.com/r/logicfish/dmd/)
+[![Docker Build](https://img.shields.io/docker/automated/dlanguage/dmd.svg)](https://hub.docker.com/r/logicfish/dmd/)
+[![Latest Tag](https://img.shields.io/github/tag/lindt/docker-dmd.svg)](https://hub.docker.com/r/logicfish/dmd/)
 
 # docker-dmd
 
@@ -18,7 +18,7 @@ Allows to use all major D Compilers without installation.
 
 | Compiler | Latest Tag |
 | -------- | ---------- |
-| DMD      | [![Latest Tag](https://img.shields.io/github/tag/lindt/docker-dmd.svg)](https://hub.docker.com/r/dlanguage/dmd/) |
+| DMD      | [![Latest Tag](https://img.shields.io/github/tag/lindt/docker-dmd.svg)](https://hub.docker.com/r/logicfish/dmd/) |
 | LDC      | [![Latest Tag](https://img.shields.io/github/tag/lindt/docker-ldc.svg)](https://hub.docker.com/r/dlanguage/ldc/) |
 | GDC      | [![Latest Tag](https://img.shields.io/github/tag/lindt/docker-gdc.svg)](https://hub.docker.com/r/dlanguage/gdc/) |
 
