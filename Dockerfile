@@ -1,10 +1,10 @@
 FROM ubuntu:16.04
 
-MAINTAINER Stefan Rohe <think@hotmail.de>
+MAINTAINER Mark Fisher <logicfish@gmail.com>
 
 ENV \
   COMPILER=dmd \
-  COMPILER_VERSION=2.077.1
+  COMPILER_VERSION=2.078.3
 
 RUN apt-get update && apt-get install -y curl libcurl3 build-essential \
  && curl -fsS -o /tmp/install.sh https://dlang.org/install.sh \
