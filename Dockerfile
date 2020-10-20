@@ -44,7 +44,7 @@ WORKDIR /src
 
 ENV GOSU_VERSION 1.9
 RUN apt-get update \
- && apt-get install -y --no-install-recommends ca-certificates wget \
+ && apt-get install -y --no-install-recommends ca-certificates wget gpg \
  && wget -O /usr/local/bin/gosu \
         "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-$(dpkg --print-architecture)" \
  && wget -O /usr/local/bin/gosu.asc \
