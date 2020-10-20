@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y curl libcurl4 build-essential \
  && bash /tmp/install.sh -p /dlang install "${COMPILER}-${COMPILER_VERSION}" \
  && rm /tmp/install.sh \
  && apt-get auto-remove -y curl build-essential \
- && apt-get install -y gcc libcurl4-gnutls \
+ && apt-get install -y gcc \
  && rm -rf /var/cache/apt \
  && rm -rf /dlang/${COMPILER}-*/linux/bin32 \
  && rm -rf /dlang/${COMPILER}-*/linux/lib32 \
