@@ -6,7 +6,7 @@ ENV \
   COMPILER=dmd \
   COMPILER_VERSION=2.094.1
 
-RUN apt-get update && apt-get install -y curl libcurl4 build-essential \
+RUN apt-get update && apt-get install -y curl libcurl4-gnutls-dev build-essential \
  && curl -fsS -o /tmp/install.sh https://dlang.org/install.sh \
  && bash /tmp/install.sh -p /dlang install "${COMPILER}-${COMPILER_VERSION}" \
  && rm /tmp/install.sh \
